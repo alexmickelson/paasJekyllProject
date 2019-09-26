@@ -6,16 +6,15 @@ permalink: /pages/api/
 <script>
     $("#javascriptOutput").after("I wrote this with Javascript")
 
-    sendGetRequest(){
+    function sendGetRequest(){
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime");
         var json = await response.json();
-    $("#javascriptOutput").after(json)
-
+        $("#javascriptOutput").after(json)
     }
-    sendPostRequest(){
+    function sendPostRequest(){
         //
     }
-    sendDeleteRequest(){
+    function sendDeleteRequest(){
         //
     }
 </script>
