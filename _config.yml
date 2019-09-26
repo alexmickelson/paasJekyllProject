@@ -16,7 +16,7 @@
 title: Paas assignment
 description: >- # this means to ignore newlines until "baseurl:"
   This is a message3
-baseurl: "/paasJekyllProject/" # the subpath of your site, e.g. /blog
+baseurl: "/paasJekyllProject" # the subpath of your site, e.g. /blog
 url: "http://alexmickelson.guru" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
