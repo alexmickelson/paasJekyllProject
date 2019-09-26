@@ -13,6 +13,7 @@ permalink: /pages/api/
         });
         debugger;
         var myjson = await response.json();
+        $("#javascriptOutput").empty();
         myjson.forEach((item) => {
             $("#javascriptOutput").after("<p>state: " + item.state + " StartTime: " + item.startTime + "</p>")
         });
