@@ -30,7 +30,7 @@ permalink: /pages/api/
         });
         $("#javascriptOutput").after(myjson)
     }
-    function sendPostRequest(){
+    async function sendPostRequest(){
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:
             {
@@ -44,7 +44,7 @@ permalink: /pages/api/
                 "State": "From Jekyll"
             }
     }
-    function sendDeleteRequest(){
+    async function sendDeleteRequest(){
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" },
             method: "delete"
