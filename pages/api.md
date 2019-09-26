@@ -40,7 +40,6 @@ permalink: /pages/api/
             method: "post",
             body: JSON.stringify(
             {
-                Id: 54000,
                 State: 'From Jekyll'
             })
         });
