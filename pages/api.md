@@ -53,11 +53,11 @@ permalink: /pages/api/
     }
 </script>
 
-### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
 <button  onClick="sendPostRequest()">Post Info</button>
 <button  onClick="sendDeleteRequest()">Delete All</button>
+
+### Output:
 <div id="javascriptOutput"></div>
 
 
-##### end js output
