@@ -1,5 +1,6 @@
 ---
 title: Use our Heroku api
+#permalink: /pages/api/
 ---
 
 <script src="/js/api.js" >
