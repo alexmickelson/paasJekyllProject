@@ -3,8 +3,7 @@ title: Use our Heroku api
 permalink: /pages/api/
 ---
 
-<script src="{{ base.url | prepend: site.url }}/js/api.js" >
-</script>
+<script src="{{ base.url | prepend: site.url }}/js/api.js" ></script>
 
 ### js output:
 
@@ -12,4 +11,4 @@ permalink: /pages/api/
 
 ##### end js output
 
-"{{ base.url | prepend: site.url }}/js/api.js" 
+{{ base.url | prepend: site.url }}/js/api.js
