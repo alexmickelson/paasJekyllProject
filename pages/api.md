@@ -28,7 +28,7 @@ permalink: /pages/api/
 
 ### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
-<div id="javascriptOutput" style="border-radius: 20px; border-style: dotted"></div>
+<div id="javascriptOutput" style="border-radius: 20px; border-style: bold; padding: 7px;"></div>
 
 
 ##### end js output
