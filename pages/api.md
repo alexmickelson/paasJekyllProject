@@ -12,7 +12,7 @@ permalink: /pages/api/
     }
     p
     {
-
+        color: blue;
     }
 </style>
 <script>
