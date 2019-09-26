@@ -10,6 +10,7 @@ permalink: /pages/api/
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" }
         });
+        debugger;
         var json = await response.json();
         $("#javascriptOutput").after(json)
     }
