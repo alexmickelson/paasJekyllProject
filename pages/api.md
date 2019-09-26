@@ -43,7 +43,7 @@ permalink: /pages/api/
                 "Id": 54000,
                 "State": "From Jekyll"
             }
-        }
+        });
     }
     async function sendDeleteRequest(){
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
