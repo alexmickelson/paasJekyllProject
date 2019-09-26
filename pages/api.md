@@ -7,7 +7,9 @@ permalink: /pages/api/
     $("#javascriptOutput").after("I wrote this with Javascript")
 
     async function sendGetRequest(){
-        var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime");
+        var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
+            headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" }
+        });
         var json = await response.json();
         $("#javascriptOutput").after(json)
     }
