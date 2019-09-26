@@ -31,15 +31,31 @@ permalink: /pages/api/
         $("#javascriptOutput").after(myjson)
     }
     function sendPostRequest(){
-        //
+        var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
+            headers:
+            {
+                "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com",
+                'Content-Type': 'application/json'
+            },
+            method: "post",
+            body:
+            {
+                "Id": 54000,
+                "State": "From Jekyll"
+            }
     }
     function sendDeleteRequest(){
-        //
+        var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
+            headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" },
+            method: "delete"
+        });
     }
 </script>
 
 ### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
+<button  onClick="sendPostRequest()">Post Info</button>
+<button  onClick="sendDeleteRequest()">Delete All</button>
 <div id="javascriptOutput"></div>
 
 
