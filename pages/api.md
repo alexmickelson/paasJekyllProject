@@ -14,7 +14,7 @@ permalink: /pages/api/
         var myjson = await response.json();
         $("#javascriptOutput").empty();
         myjson.forEach((item) => {
-            $("#javascriptOutput").append("<p>state: " + item.state + " StartTime: " + item.startTime + "</p>")
+            $("#javascriptOutput").append("<p>State: " + item.state + " StartTime: " + item.startTime + "</p>")
         });
         $("#javascriptOutput").after(myjson)
     }
@@ -28,7 +28,7 @@ permalink: /pages/api/
 
 ### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
-<div class="Container" id="javascriptOutput"></div>
+<div class="highlight cp" id="javascriptOutput"></div>
 
 
 ##### end js output
