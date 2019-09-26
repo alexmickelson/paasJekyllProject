@@ -14,7 +14,7 @@ permalink: /pages/api/
         debugger;
         var myjson = await response.json();
         myjson.forEach((item) => {
-            $("#javascriptOutput").after("state: " + item.state + " StartTime: " + item.startTime)
+            $("#javascriptOutput").after("<p>state: " + item.state + " StartTime: " + item.startTime + "</p>")
             debugger;
         });
         $("#javascriptOutput").after(myjson)
