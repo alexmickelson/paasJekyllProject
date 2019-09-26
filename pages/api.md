@@ -28,7 +28,7 @@ permalink: /pages/api/
 
 ### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
-<div id="javascriptOutput"></div>
+<div class="Container" id="javascriptOutput"></div>
 
 
 ##### end js output
