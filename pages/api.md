@@ -20,7 +20,7 @@ permalink: /pages/api/
 </script>
 
 ### js output:
-<button  onClick="sendGetRequest">Get Info<button>
+<button  onClick="sendGetRequest">Get Info</button>
 <div id="javascriptOutput"></div>
 
 
