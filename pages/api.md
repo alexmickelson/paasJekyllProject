@@ -2,7 +2,19 @@
 title: Use our Heroku api
 permalink: /pages/api/
 ---
+<style>
+    #javascriptOutput
+    {
+        border-radius: 20px; 
+        border-style: solid; 
+        padding: 7px; 
+        border-color: white"
+    }
+    p
+    {
 
+    }
+</style>
 <script>
     $("#javascriptOutput").after("I wrote this with Javascript")
 
@@ -28,7 +40,7 @@ permalink: /pages/api/
 
 ### js output:
 <button  onClick="sendGetRequest()">Get Info</button>
-<div id="javascriptOutput" style="border-radius: 20px; border-style: dotted; padding: 7px; border-color: white"></div>
+<div id="javascriptOutput"></div>
 
 
 ##### end js output
