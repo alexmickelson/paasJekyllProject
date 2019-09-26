@@ -32,7 +32,7 @@ permalink: /pages/api/
     }
     async function sendPostRequest(){
         debugger
-        
+
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:
             {
@@ -40,11 +40,11 @@ permalink: /pages/api/
                 'Content-Type': 'application/json'
             },
             method: "post",
-            body:
+            body: JSON.Stringify(
             {
-                "Id": 54000,
-                "State": "From Jekyll"
-            }
+                Id: 54000,
+                State: From Jekyll
+            })
         });
     }
     async function sendDeleteRequest(){
