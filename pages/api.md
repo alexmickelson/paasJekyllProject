@@ -43,7 +43,7 @@ permalink: /pages/api/
             body: JSON.Stringify(
             {
                 Id: 54000,
-                State: From Jekyll
+                State: 'From Jekyll'
             })
         });
     }
