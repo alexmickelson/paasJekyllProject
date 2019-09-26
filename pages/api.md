@@ -6,12 +6,17 @@ permalink: /pages/api/
 <script>
     $("#javascriptOutput").after("I wrote this with Javascript")
 
+
     async function sendGetRequest(){
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" }
         });
         debugger;
         var myjson = await response.json();
+        myjson.forEach((item) => {
+            $("#javascriptOutput").after("state: " + item.state + " StartTime: " + item.startTime)
+            debugger;
+        });
         $("#javascriptOutput").after(myjson)
     }
     function sendPostRequest(){
