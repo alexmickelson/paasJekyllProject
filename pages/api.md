@@ -11,8 +11,8 @@ permalink: /pages/api/
             headers:{ "Access-Control-Allow-Origin": "https://passapiproject.herokuapp.com" }
         });
         debugger;
-        var json = await response.json();
-        $("#javascriptOutput").after(json)
+        var myjson = await response.json();
+        $("#javascriptOutput").after(myjson)
     }
     function sendPostRequest(){
         //
