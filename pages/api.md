@@ -40,7 +40,7 @@ permalink: /pages/api/
                 'Content-Type': 'application/json'
             },
             method: "post",
-            body: JSON.Stringify(
+            body: JSON.stringify(
             {
                 Id: 54000,
                 State: 'From Jekyll'
