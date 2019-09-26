@@ -31,6 +31,8 @@ permalink: /pages/api/
         $("#javascriptOutput").after(myjson)
     }
     async function sendPostRequest(){
+        debugger
+        
         var response = await fetch("https://passapiproject.herokuapp.com/api/v1/Uptime",{
             headers:
             {
